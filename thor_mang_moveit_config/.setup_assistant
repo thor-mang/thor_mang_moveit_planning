@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: thormang3_description
+    relative_path: urdf/thormang3.xacro
+  SRDF:
+    relative_path: config/thormang3.srdf
+  CONFIG:
+    generated_timestamp: 1464190322
