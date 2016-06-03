@@ -17,14 +17,6 @@ controller_list:
       - l_arm_wr_r
       - l_arm_wr_y
       - l_arm_wr_p
-  - name: fake_right_gripper_controller
-    joints:
-      - r_arm_grip
-      - r_arm_grip_1
-  - name: fake_left_gripper_controller
-    joints:
-      - l_arm_grip
-      - l_arm_grip_1
   - name: fake_left_arm_with_torso_group_controller
     joints:
       - torso_y
@@ -45,3 +37,11 @@ controller_list:
       - r_arm_wr_r
       - r_arm_wr_y
       - r_arm_wr_p
+  - name: fake_right_hand_controller
+    joints:
+      - r_f0_j0
+      - r_f1_j0
+  - name: fake_left_hand_controller
+    joints:
+      - l_f0_j0
+      - l_f1_j0

@@ -7,7 +7,7 @@ Panels:
         - /MotionPlanning1
         - /MotionPlanning1/Planning Request1
       Splitter Ratio: 0.74256
-    Tree Height: 253
+    Tree Height: 254
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -91,21 +91,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          l_arm_end_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          l_arm_grip_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          l_arm_grip_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           l_arm_sh_p1_link:
             Alpha: 1
             Show Axes: false
@@ -132,6 +117,16 @@ Visualization Manager:
             Show Trail: false
             Value: true
           l_arm_wr_y_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          l_f0_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          l_f1_link_0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -175,6 +170,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          l_palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           lidar_link:
             Alpha: 1
             Show Axes: false
@@ -185,21 +185,6 @@ Visualization Manager:
             Show Trail: false
             Value: true
           r_arm_el_y_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_arm_end_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_arm_grip_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_arm_grip_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -230,6 +215,16 @@ Visualization Manager:
             Show Trail: false
             Value: true
           r_arm_wr_y_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          r_f0_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          r_f1_link_0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -273,6 +268,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          r_palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           realsense_link:
             Alpha: 1
             Show Axes: false
@@ -295,7 +295,7 @@ Visualization Manager:
         Colliding Link Color: 255; 0; 0
         Goal State Alpha: 1
         Goal State Color: 250; 128; 0
-        Interactive Marker Size: 0
+        Interactive Marker Size: 0.2
         Joint Violation Color: 255; 0; 255
         Planning Group: left_arm_group
         Query Goal State: true
@@ -348,21 +348,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          l_arm_end_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          l_arm_grip_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          l_arm_grip_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           l_arm_sh_p1_link:
             Alpha: 1
             Show Axes: false
@@ -389,6 +374,16 @@ Visualization Manager:
             Show Trail: false
             Value: true
           l_arm_wr_y_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          l_f0_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          l_f1_link_0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -432,6 +427,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          l_palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           lidar_link:
             Alpha: 1
             Show Axes: false
@@ -442,21 +442,6 @@ Visualization Manager:
             Show Trail: false
             Value: true
           r_arm_el_y_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_arm_end_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_arm_grip_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r_arm_grip_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -487,6 +472,16 @@ Visualization Manager:
             Show Trail: false
             Value: true
           r_arm_wr_y_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          r_f0_link_0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          r_f1_link_0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -530,6 +525,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          r_palm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           realsense_link:
             Alpha: 1
             Show Axes: false
@@ -553,22 +553,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.88364
+      Distance: 1.56417
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.00405351
-        Y: -0.0125407
-        Z: 0.420666
+        X: 0.292933
+        Y: 0.00346436
+        Z: 0.302276
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.859801
+      Pitch: -0.00519899
       Target Frame: pelvis_link
       Value: Orbit (rviz)
-      Yaw: 6.26997
+      Yaw: 6.22997
     Saved: ~
 Window Geometry:
   Displays:
@@ -580,9 +580,9 @@ Window Geometry:
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003dafc0200000005fb000000100044006900730070006c006100790073010000002800000192000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a005600690065007700730000000175000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001c000000242000001cc00ffffff000004c9000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003dafc0200000005fb000000100044006900730070006c006100790073010000002800000193000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a005600690065007700730000000175000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001c100000241000001cc00ffffff000004c9000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1920
-  X: 0
+  X: 1920
   Y: 24
