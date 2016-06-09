@@ -1,4 +1,4 @@
- - name: /johnny5/left_arm_traj_controller
+ - name: /johnny5/joints/left_arm_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true
@@ -11,7 +11,7 @@
         - l_arm_wr_y
         - l_arm_wr_p
        
- - name: /johnny5/right_arm_traj_controller
+ - name: /johnny5/joints/right_arm_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true
@@ -24,7 +24,7 @@
         - r_arm_wr_y
         - r_arm_wr_p
 
- - name: /johnny5/torso_traj_controller
+ - name: /johnny5/joints/torso_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true
