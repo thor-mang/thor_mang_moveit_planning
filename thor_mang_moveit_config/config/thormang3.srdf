@@ -47,12 +47,12 @@
         <joint name="r_arm_wr_y" />
         <joint name="r_arm_wr_p" />
     </group>
-    <group name="right_hand">
+    <group name="right_hand_group">
         <link name="r_f1_link_0" />
         <link name="r_f0_link_0" />
         <link name="r_palm" />
     </group>
-    <group name="left_hand">
+    <group name="left_hand_group">
         <link name="l_palm" />
         <link name="l_f0_link_0" />
         <link name="l_f1_link_0" />
@@ -77,8 +77,8 @@
         <joint name="l_arm_wr_y" value="0" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="right_eef" parent_link="r_arm_wr_p_link" group="right_hand" parent_group="right_arm_group" />
-    <end_effector name="left_eef" parent_link="l_arm_wr_p_link" group="left_hand" parent_group="left_arm_group" />
+    <end_effector name="right_eef" parent_link="r_arm_wr_p_link" group="right_hand_group" parent_group="right_arm_group" />
+    <end_effector name="left_eef" parent_link="l_arm_wr_p_link" group="left_hand_group" parent_group="left_arm_group" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="world_virtual_joint" type="floating" parent_frame="world" child_link="pelvis_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
