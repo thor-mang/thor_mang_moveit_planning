@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_right_arm_group_controller
+  - name: fake_r_arm_group_controller
     joints:
       - r_arm_sh_p1
       - r_arm_sh_r
@@ -8,7 +8,7 @@ controller_list:
       - r_arm_wr_r
       - r_arm_wr_y
       - r_arm_wr_p
-  - name: fake_left_arm_group_controller
+  - name: fake_l_arm_group_controller
     joints:
       - l_arm_sh_p1
       - l_arm_sh_r
@@ -17,7 +17,7 @@ controller_list:
       - l_arm_wr_r
       - l_arm_wr_y
       - l_arm_wr_p
-  - name: fake_left_arm_with_torso_group_controller
+  - name: fake_l_arm_with_torso_group_controller
     joints:
       - torso_y
       - l_arm_sh_p1
@@ -27,7 +27,7 @@ controller_list:
       - l_arm_wr_r
       - l_arm_wr_y
       - l_arm_wr_p
-  - name: fake_right_arm_with_torso_group_controller
+  - name: fake_r_arm_with_torso_group_controller
     joints:
       - torso_y
       - r_arm_sh_p1
