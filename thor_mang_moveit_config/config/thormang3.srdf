@@ -83,14 +83,16 @@
         <group name="l_leg_group" />
     </group>
     <group name="right_hand_group">
-        <link name="r_f1_link_0" />
-        <link name="r_f0_link_0" />
-        <link name="r_palm" />
+        <joint name="r_f0_j0" />
+		<!--<joint name="r_f0_j1" />-->
+        <joint name="r_f1_j0" />
+		<!--<joint name="r_f1_j1" />-->
     </group>
     <group name="left_hand_group">
-        <link name="l_palm" />
-        <link name="l_f0_link_0" />
-        <link name="l_f1_link_0" />
+        <joint name="l_f0_j0" />
+		<!--<joint name="l_f0_j1" />-->
+        <joint name="l_f1_j0" />
+		<!--<joint name="l_f1_j1" />-->
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="standpose_right" group="r_arm_group">
