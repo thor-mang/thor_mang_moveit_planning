@@ -36,7 +36,7 @@
 
   <!-- Sensors Functionality -->
   <include ns="move_group" file="$(find thor_mang_moveit_config)/launch/sensor_manager.launch.xml" if="$(arg allow_trajectory_execution)">
-    <arg name="moveit_sensor_manager" value="thormang3" />
+    <arg name="moveit_sensor_manager" value="johnny5" />
   </include>
 
   <!-- Start the actual move_group node/action server -->
