@@ -2,7 +2,13 @@
 
 <launch>
 
-  <include file="$(find thor_mang_moveit_config)/launch/planning_context.launch" />
+  <arg name="robot_name" default="thormang3" />
+  <arg name="use_hands"  default="$(optenv USE_HANDS false)" />
+
+  <include file="$(find thor_mang_moveit_config)/launch/planning_context.launch" >
+     <arg name="robot_name" value="$(arg robot_name)" />
+     <arg name="use_hands"  value="$(arg use_hands)" />
+  </include>
 
   <!-- GDB Debug Option -->
   <arg name="debug" default="false" />
