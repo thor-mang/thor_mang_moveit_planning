@@ -1,8 +1,0 @@
-<launch>
-
-  <node name    = "rosparam_append_node"
-        pkg     = "thor_mang_moveit_config"
-        type    = "rosparam_append"
-        args    = "$(find thor_mang_moveit_config)/config/controllers.yaml  /move_group/controller_list"/>
-
-</launch>
