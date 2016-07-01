@@ -1,6 +1,6 @@
 sensors:
   - sensor_plugin: occupancy_map_monitor/LidarOctomapUpdater
-    scan_topic: /johnny5/sensor/lidar/scan
+    scan_topic: /johnny5/sensor/head_lidar/scan
     max_range: 5.0
     point_subsample: 1
     padding_offset: 0.07
