@@ -1,32 +1,34 @@
- - name: /johnny5/joints/left_arm_traj_controller
-   action_ns: follow_joint_trajectory
-   type: FollowJointTrajectory
-   default: true
-   joints:
-        - l_arm_sh_p1
-        - l_arm_sh_r
-        - l_arm_sh_p2
-        - l_arm_el_y
-        - l_arm_wr_r
-        - l_arm_wr_y
-        - l_arm_wr_p
-       
- - name: /johnny5/joints/right_arm_traj_controller
-   action_ns: follow_joint_trajectory
-   type: FollowJointTrajectory
-   default: true
-   joints:
-        - r_arm_sh_p1
-        - r_arm_sh_r
-        - r_arm_sh_p2
-        - r_arm_el_y
-        - r_arm_wr_r
-        - r_arm_wr_y
-        - r_arm_wr_p
+controller_manager_ns: thormang3_controller_manager
+controller_list: 
+  - name: /johnny5/joints/left_arm_traj_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - l_arm_sh_p1
+      - l_arm_sh_r
+      - l_arm_sh_p2
+      - l_arm_el_y
+      - l_arm_wr_r
+      - l_arm_wr_y
+      - l_arm_wr_p
 
- - name: /johnny5/joints/torso_traj_controller
-   action_ns: follow_joint_trajectory
-   type: FollowJointTrajectory
-   default: true
-   joints:
-        - torso_y
+  - name: /johnny5/joints/right_arm_traj_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - r_arm_sh_p1
+      - r_arm_sh_r
+      - r_arm_sh_p2
+      - r_arm_el_y
+      - r_arm_wr_r
+      - r_arm_wr_y
+      - r_arm_wr_p
+
+  - name: /johnny5/joints/torso_traj_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - torso_y

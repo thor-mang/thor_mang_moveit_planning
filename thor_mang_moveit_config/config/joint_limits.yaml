@@ -7,6 +7,11 @@ joint_limits:
     max_velocity: 6.5
     has_acceleration_limits: false
     max_acceleration: 0
+  l_arm_ft:
+    has_velocity_limits: true
+    max_velocity: 6.5
+    has_acceleration_limits: false
+    max_acceleration: 0
   l_arm_sh_p1:
     has_velocity_limits: true
     max_velocity: 6.5
@@ -37,17 +42,12 @@ joint_limits:
     max_velocity: 6.5
     has_acceleration_limits: false
     max_acceleration: 0
-  l_f0_j0:
-    has_velocity_limits: true
-    max_velocity: 10
-    has_acceleration_limits: false
-    max_acceleration: 0
-  l_f1_j0:
-    has_velocity_limits: true
-    max_velocity: 10
-    has_acceleration_limits: false
-    max_acceleration: 0
   r_arm_el_y:
+    has_velocity_limits: true
+    max_velocity: 6.5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  r_arm_ft:
     has_velocity_limits: true
     max_velocity: 6.5
     has_acceleration_limits: false
@@ -78,21 +78,6 @@ joint_limits:
     has_acceleration_limits: false
     max_acceleration: 0
   r_arm_wr_y:
-    has_velocity_limits: true
-    max_velocity: 6.5
-    has_acceleration_limits: false
-    max_acceleration: 0
-  r_f0_j0:
-    has_velocity_limits: true
-    max_velocity: 10
-    has_acceleration_limits: false
-    max_acceleration: 0
-  r_f1_j0:
-    has_velocity_limits: true
-    max_velocity: 10
-    has_acceleration_limits: false
-    max_acceleration: 0
-  torso_y:
     has_velocity_limits: true
     max_velocity: 6.5
     has_acceleration_limits: false

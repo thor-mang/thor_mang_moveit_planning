@@ -1,12 +1,10 @@
 <launch>
-
-  <!-- Set the param that trajectory_execution_manager needs to find the controller plugin -->
   <arg name="moveit_controller_manager" default="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
-  <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
-
-  <node name    = "rosparam_append_node"
-        pkg     = "thor_mang_moveit_config"
-        type    = "rosparam_append"
-        args    = "$(find thor_mang_moveit_config)/config/controllers.yaml  /move_group/controller_list"/>
-
+  <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)" />
+  <arg name="controller_manager_name" default="thormang3_controller_manager" />
+  <param name="controller_manager_name" value="$(arg controller_manager_name)" />
+  <arg name="use_controller_manager" default="true" />
+  <param name="use_controller_manager" value="$(arg use_controller_manager)" />
+  <rosparam command="load" file="$(find thor_mang_moveit_config)/config/controllers.yaml" />
 </launch>
+
