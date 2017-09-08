@@ -6,7 +6,10 @@
   <arg name="robot_description" default="robot_description"/>
 
   <!-- Load universal robot description format (URDF) -->
-  <param if="$(arg load_robot_description)" name="$(arg robot_description)" textfile="$(find thormang3_description)/urdf/johnny5.urdf"/>
+  <include if="$(arg load_robot_description)" file="$(find thormang3_description)/launch/load_robot_description.launch">
+    <arg name="robot_name" value="johnny5" />
+    <arg name="use_hands" value="$(optenv USE_HANDS false)" />
+  </include>
 
   <!-- The semantic description that corresponds to the URDF -->
   <param name="$(arg robot_description)_semantic" textfile="$(find thor_mang_moveit_config)/config/johnny5.srdf" />
