@@ -52,6 +52,8 @@
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="l_eef" parent_link="l_arm_wr_p_link" group="l_gripper" />
     <end_effector name="r_eef" parent_link="r_arm_wr_p_link" group="r_gripper" />
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="virtual_joint" type="floating" parent_frame="world" child_link="pelvis_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="chest_link" link2="head_cam_link" reason="Never" />
     <disable_collisions link1="chest_link" link2="head_link" reason="Never" />

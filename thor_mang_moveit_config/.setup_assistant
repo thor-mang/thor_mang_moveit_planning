@@ -7,4 +7,4 @@ moveit_setup_assistant_config:
   CONFIG:
     author_name: Alexander Stumpf
     author_email: stumpf@sim.tu-darmstadt.de
-    generated_timestamp: 1504280931
+    generated_timestamp: 1507128008
