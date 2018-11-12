@@ -1,10 +1,11 @@
 moveit_setup_assistant_config:
   URDF:
     package: thormang3_description
-    relative_path: urdf/johnny5.urdf
+    relative_path: urdf/thormang3.xacro
+    xacro_args: --inorder robot_name:=johnny5 l_hand_type:=vt_hand r_hand_type:=vt_hand wrist_ft_sensor:=false
   SRDF:
     relative_path: config/johnny5.srdf
   CONFIG:
     author_name: Alexander Stumpf
     author_email: stumpf@sim.tu-darmstadt.de
-    generated_timestamp: 1507128008
+    generated_timestamp: 1542036529

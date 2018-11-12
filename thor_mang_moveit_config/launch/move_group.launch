@@ -1,7 +1,16 @@
 <launch>
-  <remap from="joint_states" to="joints/joint_states" />
+  <arg name="robot_name"  default="johnny5" />
+  <arg name="l_hand_type" default="$(optenv L_HAND_TYPE none)" />
+  <arg name="r_hand_type" default="$(optenv R_HAND_TYPE none)" />
 
-  <include file="$(find thor_mang_moveit_config)/launch/planning_context.launch" />
+  <remap from="joint_states" to="/$(arg robot_name)/joints/joint_states" />
+
+  <include file="$(find thor_mang_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true" />
+    <arg name="robot_name" value="$(arg robot_name)" />
+    <arg name="l_hand_type" value="$(arg l_hand_type)" />
+    <arg name="r_hand_type" value="$(arg r_hand_type)" />
+  </include>
 
   <!-- GDB Debug Option -->
   <arg name="debug" default="false" />

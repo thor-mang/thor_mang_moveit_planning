@@ -55,8 +55,35 @@
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="floating" parent_frame="world" child_link="pelvis_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="backpack_link" link2="chest_link" reason="Adjacent" />
+    <disable_collisions link1="backpack_link" link2="head_cam_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="head_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="head_link_hokuyo_laser_frame" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="head_p_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="head_y_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_arm_sh_p1_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_arm_sh_r_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_leg_an_r_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_leg_foot_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_leg_hip_p_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_leg_hip_r_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_leg_hip_y_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="l_leg_kn_p_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="power_module_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_arm_sh_p1_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_arm_sh_r_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_leg_an_r_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_leg_foot_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_leg_hip_p_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_leg_hip_r_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_leg_hip_y_link" reason="Never" />
+    <disable_collisions link1="backpack_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="chest_link" link2="head_cam_link" reason="Never" />
     <disable_collisions link1="chest_link" link2="head_link" reason="Never" />
+    <disable_collisions link1="chest_link" link2="head_link_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="chest_link" link2="head_p_link" reason="Never" />
     <disable_collisions link1="chest_link" link2="head_y_link" reason="Adjacent" />
     <disable_collisions link1="chest_link" link2="l_arm_sh_p1_link" reason="Adjacent" />
@@ -69,6 +96,7 @@
     <disable_collisions link1="chest_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="chest_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="chest_link" link2="pelvis_link" reason="Adjacent" />
+    <disable_collisions link1="chest_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="chest_link" link2="r_arm_sh_p1_link" reason="Adjacent" />
     <disable_collisions link1="chest_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="chest_link" link2="r_leg_an_p_link" reason="Never" />
@@ -92,6 +120,7 @@
     <disable_collisions link1="head_cam_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="head_cam_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="head_cam_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="head_cam_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="head_cam_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="head_cam_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="head_cam_link" link2="r_leg_an_p_link" reason="Never" />
@@ -114,6 +143,7 @@
     <disable_collisions link1="head_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="head_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="head_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="head_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="head_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="head_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="head_link" link2="r_leg_an_p_link" reason="Never" />
@@ -125,6 +155,8 @@
     <disable_collisions link1="head_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="head_p_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="head_y_link" reason="Never" />
+    <disable_collisions link1="head_link_hokuyo_laser_frame" link2="l_arm_sh_p1_link" reason="Never" />
+    <disable_collisions link1="head_link_hokuyo_laser_frame" link2="l_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="l_leg_an_p_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="l_leg_an_r_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="l_leg_foot_link" reason="Never" />
@@ -133,6 +165,9 @@
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="head_link_hokuyo_laser_frame" link2="power_module_link" reason="Never" />
+    <disable_collisions link1="head_link_hokuyo_laser_frame" link2="r_arm_sh_p1_link" reason="Never" />
+    <disable_collisions link1="head_link_hokuyo_laser_frame" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="r_leg_an_p_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="r_leg_an_r_link" reason="Never" />
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="r_leg_foot_link" reason="Never" />
@@ -142,6 +177,7 @@
     <disable_collisions link1="head_link_hokuyo_laser_frame" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="head_y_link" reason="Adjacent" />
     <disable_collisions link1="head_p_link" link2="l_arm_sh_p1_link" reason="Never" />
+    <disable_collisions link1="head_p_link" link2="l_arm_sh_p2_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="l_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="l_leg_an_p_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="l_leg_an_r_link" reason="Never" />
@@ -151,6 +187,7 @@
     <disable_collisions link1="head_p_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="head_p_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="head_p_link" link2="r_leg_an_p_link" reason="Never" />
@@ -171,6 +208,7 @@
     <disable_collisions link1="head_y_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="head_y_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="head_y_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="head_y_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="head_y_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="head_y_link" link2="r_arm_sh_p2_link" reason="Never" />
     <disable_collisions link1="head_y_link" link2="r_arm_sh_r_link" reason="Never" />
@@ -190,14 +228,15 @@
     <disable_collisions link1="l_arm_el_y_link" link2="l_f1_link_0" reason="Never" />
     <disable_collisions link1="l_arm_el_y_link" link2="l_leg_an_p_link" reason="Never" />
     <disable_collisions link1="l_arm_el_y_link" link2="l_leg_an_r_link" reason="Never" />
+    <disable_collisions link1="l_arm_el_y_link" link2="l_leg_foot_link" reason="Never" />
+    <disable_collisions link1="l_arm_el_y_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="l_arm_el_y_link" link2="l_palm" reason="Never" />
     <disable_collisions link1="l_arm_el_y_link" link2="r_arm_sh_p1_link" reason="Never" />
+    <disable_collisions link1="l_arm_el_y_link" link2="r_arm_sh_p2_link" reason="Never" />
     <disable_collisions link1="l_arm_el_y_link" link2="r_arm_sh_r_link" reason="Never" />
-    <disable_collisions link1="l_arm_el_y_link" link2="r_leg_an_p_link" reason="Never" />
-    <disable_collisions link1="l_arm_el_y_link" link2="r_leg_an_r_link" reason="Never" />
     <disable_collisions link1="l_arm_el_y_link" link2="r_leg_hip_p_link" reason="Never" />
     <disable_collisions link1="l_arm_el_y_link" link2="r_leg_hip_r_link" reason="Never" />
-    <disable_collisions link1="l_arm_el_y_link" link2="r_leg_kn_p_link" reason="Never" />
+    <disable_collisions link1="l_arm_el_y_link" link2="r_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="l_arm_sh_r_link" reason="Adjacent" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="l_leg_an_p_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="l_leg_an_r_link" reason="Never" />
@@ -207,6 +246,7 @@
     <disable_collisions link1="l_arm_sh_p1_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="l_arm_sh_p1_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="r_arm_el_y_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="r_arm_sh_p2_link" reason="Never" />
@@ -220,6 +260,7 @@
     <disable_collisions link1="l_arm_sh_p1_link" link2="r_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p1_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p2_link" link2="l_arm_sh_r_link" reason="Adjacent" />
+    <disable_collisions link1="l_arm_sh_p2_link" link2="l_arm_wr_p_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p2_link" link2="l_arm_wr_r_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p2_link" link2="l_arm_wr_y_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_p2_link" link2="l_f0_link_0" reason="Never" />
@@ -248,6 +289,7 @@
     <disable_collisions link1="l_arm_sh_r_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_r_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_r_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="l_arm_sh_r_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_r_link" link2="r_arm_el_y_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_r_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="l_arm_sh_r_link" link2="r_arm_sh_p2_link" reason="Never" />
@@ -265,23 +307,26 @@
     <disable_collisions link1="l_arm_wr_p_link" link2="l_f0_link_0" reason="Never" />
     <disable_collisions link1="l_arm_wr_p_link" link2="l_f1_link_0" reason="Never" />
     <disable_collisions link1="l_arm_wr_p_link" link2="l_palm" reason="Adjacent" />
+    <disable_collisions link1="l_arm_wr_p_link" link2="r_leg_an_p_link" reason="Never" />
     <disable_collisions link1="l_arm_wr_r_link" link2="l_arm_wr_y_link" reason="Adjacent" />
     <disable_collisions link1="l_arm_wr_r_link" link2="l_f0_link_0" reason="Never" />
     <disable_collisions link1="l_arm_wr_r_link" link2="l_f1_link_0" reason="Never" />
     <disable_collisions link1="l_arm_wr_r_link" link2="l_palm" reason="Never" />
     <disable_collisions link1="l_arm_wr_r_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="l_arm_wr_r_link" link2="r_arm_sh_r_link" reason="Never" />
-    <disable_collisions link1="l_arm_wr_r_link" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="l_arm_wr_r_link" link2="r_leg_foot_link" reason="Never" />
     <disable_collisions link1="l_arm_wr_y_link" link2="l_f0_link_0" reason="Never" />
     <disable_collisions link1="l_arm_wr_y_link" link2="l_f1_link_0" reason="Never" />
     <disable_collisions link1="l_arm_wr_y_link" link2="l_palm" reason="Never" />
     <disable_collisions link1="l_arm_wr_y_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="l_f0_link_0" link2="l_f1_link_0" reason="Never" />
-    <disable_collisions link1="l_f0_link_0" link2="l_leg_an_p_link" reason="Never" />
     <disable_collisions link1="l_f0_link_0" link2="l_palm" reason="Adjacent" />
-    <disable_collisions link1="l_f0_link_0" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="l_f0_link_0" link2="r_arm_wr_r_link" reason="Never" />
+    <disable_collisions link1="l_f0_link_0" link2="r_leg_foot_link" reason="Never" />
+    <disable_collisions link1="l_f1_link_0" link2="l_leg_an_p_link" reason="Never" />
     <disable_collisions link1="l_f1_link_0" link2="l_palm" reason="Adjacent" />
-    <disable_collisions link1="l_f1_link_0" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="l_f1_link_0" link2="r_f1_link_0" reason="Never" />
+    <disable_collisions link1="l_f1_link_0" link2="r_leg_foot_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="l_leg_an_r_link" reason="Adjacent" />
     <disable_collisions link1="l_leg_an_p_link" link2="l_leg_foot_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="l_leg_hip_p_link" reason="Never" />
@@ -289,12 +334,14 @@
     <disable_collisions link1="l_leg_an_p_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="l_leg_kn_p_link" reason="Adjacent" />
     <disable_collisions link1="l_leg_an_p_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="l_leg_an_p_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="r_arm_el_y_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="r_arm_sh_p2_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="r_arm_wr_r_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="r_f0_link_0" reason="Never" />
+    <disable_collisions link1="l_leg_an_p_link" link2="r_f1_link_0" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="r_leg_hip_r_link" reason="Never" />
     <disable_collisions link1="l_leg_an_p_link" link2="r_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="l_leg_an_r_link" link2="l_leg_foot_link" reason="Adjacent" />
@@ -303,16 +350,23 @@
     <disable_collisions link1="l_leg_an_r_link" link2="l_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="l_leg_an_r_link" link2="l_leg_kn_p_link" reason="Default" />
     <disable_collisions link1="l_leg_an_r_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="l_leg_an_r_link" link2="power_module_link" reason="Never" />
+    <disable_collisions link1="l_leg_an_r_link" link2="r_arm_el_y_link" reason="Never" />
     <disable_collisions link1="l_leg_an_r_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="l_leg_an_r_link" link2="r_arm_sh_p2_link" reason="Never" />
     <disable_collisions link1="l_leg_an_r_link" link2="r_arm_sh_r_link" reason="Never" />
-    <disable_collisions link1="l_leg_an_r_link" link2="r_leg_hip_r_link" reason="Never" />
+    <disable_collisions link1="l_leg_an_r_link" link2="r_arm_wr_r_link" reason="Never" />
+    <disable_collisions link1="l_leg_an_r_link" link2="r_f1_link_0" reason="Never" />
     <disable_collisions link1="l_leg_foot_link" link2="l_leg_hip_p_link" reason="Never" />
     <disable_collisions link1="l_leg_foot_link" link2="l_leg_hip_r_link" reason="Never" />
     <disable_collisions link1="l_leg_foot_link" link2="l_leg_hip_y_link" reason="Never" />
+    <disable_collisions link1="l_leg_foot_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="l_leg_foot_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="l_leg_foot_link" link2="r_arm_sh_p1_link" reason="Never" />
-    <disable_collisions link1="l_leg_foot_link" link2="r_arm_sh_p2_link" reason="Never" />
     <disable_collisions link1="l_leg_foot_link" link2="r_arm_sh_r_link" reason="Never" />
+    <disable_collisions link1="l_leg_foot_link" link2="r_arm_wr_p_link" reason="Never" />
+    <disable_collisions link1="l_leg_foot_link" link2="r_arm_wr_r_link" reason="Never" />
+    <disable_collisions link1="l_leg_foot_link" link2="r_arm_wr_y_link" reason="Never" />
     <disable_collisions link1="l_leg_foot_link" link2="r_f0_link_0" reason="Never" />
     <disable_collisions link1="l_leg_hip_p_link" link2="l_leg_hip_r_link" reason="Adjacent" />
     <disable_collisions link1="l_leg_hip_p_link" link2="l_leg_hip_y_link" reason="Default" />
@@ -324,6 +378,7 @@
     <disable_collisions link1="l_leg_hip_r_link" link2="l_leg_hip_y_link" reason="Adjacent" />
     <disable_collisions link1="l_leg_hip_r_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_r_link" link2="pelvis_link" reason="Never" />
+    <disable_collisions link1="l_leg_hip_r_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_r_link" link2="r_arm_el_y_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_r_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_r_link" link2="r_arm_sh_p2_link" reason="Never" />
@@ -335,24 +390,37 @@
     <disable_collisions link1="l_leg_hip_r_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_y_link" link2="l_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_y_link" link2="pelvis_link" reason="Adjacent" />
+    <disable_collisions link1="l_leg_hip_y_link" link2="power_module_link" reason="Never" />
+    <disable_collisions link1="l_leg_hip_y_link" link2="r_arm_el_y_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_y_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_y_link" link2="r_arm_sh_p2_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_y_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_y_link" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="l_leg_hip_y_link" link2="r_leg_an_r_link" reason="Never" />
     <disable_collisions link1="l_leg_hip_y_link" link2="r_leg_hip_r_link" reason="Never" />
     <disable_collisions link1="l_leg_kn_p_link" link2="pelvis_link" reason="Never" />
-    <disable_collisions link1="l_leg_kn_p_link" link2="r_arm_el_y_link" reason="Never" />
+    <disable_collisions link1="l_leg_kn_p_link" link2="power_module_link" reason="Never" />
     <disable_collisions link1="l_leg_kn_p_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="l_leg_kn_p_link" link2="r_arm_sh_p2_link" reason="Never" />
     <disable_collisions link1="l_leg_kn_p_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="l_leg_kn_p_link" link2="r_leg_hip_r_link" reason="Never" />
+    <disable_collisions link1="pelvis_link" link2="power_module_link" reason="Adjacent" />
     <disable_collisions link1="pelvis_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="pelvis_link" link2="r_arm_sh_r_link" reason="Never" />
     <disable_collisions link1="pelvis_link" link2="r_leg_an_p_link" reason="Never" />
     <disable_collisions link1="pelvis_link" link2="r_leg_an_r_link" reason="Never" />
+    <disable_collisions link1="pelvis_link" link2="r_leg_foot_link" reason="Never" />
     <disable_collisions link1="pelvis_link" link2="r_leg_hip_r_link" reason="Never" />
     <disable_collisions link1="pelvis_link" link2="r_leg_hip_y_link" reason="Adjacent" />
     <disable_collisions link1="pelvis_link" link2="r_leg_kn_p_link" reason="Never" />
+    <disable_collisions link1="power_module_link" link2="r_arm_sh_p1_link" reason="Never" />
+    <disable_collisions link1="power_module_link" link2="r_arm_sh_r_link" reason="Never" />
+    <disable_collisions link1="power_module_link" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="power_module_link" link2="r_leg_an_r_link" reason="Never" />
+    <disable_collisions link1="power_module_link" link2="r_leg_foot_link" reason="Never" />
+    <disable_collisions link1="power_module_link" link2="r_leg_hip_r_link" reason="Never" />
+    <disable_collisions link1="power_module_link" link2="r_leg_hip_y_link" reason="Never" />
+    <disable_collisions link1="power_module_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="r_arm_el_y_link" link2="r_arm_sh_p1_link" reason="Never" />
     <disable_collisions link1="r_arm_el_y_link" link2="r_arm_sh_p2_link" reason="Adjacent" />
     <disable_collisions link1="r_arm_el_y_link" link2="r_arm_sh_r_link" reason="Never" />
@@ -360,6 +428,10 @@
     <disable_collisions link1="r_arm_el_y_link" link2="r_arm_wr_y_link" reason="Never" />
     <disable_collisions link1="r_arm_el_y_link" link2="r_f0_link_0" reason="Never" />
     <disable_collisions link1="r_arm_el_y_link" link2="r_f1_link_0" reason="Never" />
+    <disable_collisions link1="r_arm_el_y_link" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="r_arm_el_y_link" link2="r_leg_an_r_link" reason="Never" />
+    <disable_collisions link1="r_arm_el_y_link" link2="r_leg_foot_link" reason="Never" />
+    <disable_collisions link1="r_arm_el_y_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="r_arm_el_y_link" link2="r_palm" reason="Never" />
     <disable_collisions link1="r_arm_sh_p1_link" link2="r_arm_sh_r_link" reason="Adjacent" />
     <disable_collisions link1="r_arm_sh_p1_link" link2="r_leg_an_p_link" reason="Never" />
@@ -370,6 +442,7 @@
     <disable_collisions link1="r_arm_sh_p1_link" link2="r_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_p1_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_p2_link" link2="r_arm_sh_r_link" reason="Adjacent" />
+    <disable_collisions link1="r_arm_sh_p2_link" link2="r_arm_wr_p_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_p2_link" link2="r_arm_wr_r_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_p2_link" link2="r_arm_wr_y_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_p2_link" link2="r_f1_link_0" reason="Never" />
@@ -380,7 +453,7 @@
     <disable_collisions link1="r_arm_sh_p2_link" link2="r_leg_hip_r_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_p2_link" link2="r_leg_hip_y_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_p2_link" link2="r_leg_kn_p_link" reason="Never" />
-    <disable_collisions link1="r_arm_sh_r_link" link2="r_arm_wr_r_link" reason="Never" />
+    <disable_collisions link1="r_arm_sh_p2_link" link2="r_palm" reason="Never" />
     <disable_collisions link1="r_arm_sh_r_link" link2="r_leg_an_p_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_r_link" link2="r_leg_an_r_link" reason="Never" />
     <disable_collisions link1="r_arm_sh_r_link" link2="r_leg_foot_link" reason="Never" />
@@ -391,13 +464,19 @@
     <disable_collisions link1="r_arm_wr_p_link" link2="r_arm_wr_y_link" reason="Adjacent" />
     <disable_collisions link1="r_arm_wr_p_link" link2="r_f0_link_0" reason="Never" />
     <disable_collisions link1="r_arm_wr_p_link" link2="r_f1_link_0" reason="Never" />
+    <disable_collisions link1="r_arm_wr_p_link" link2="r_leg_an_p_link" reason="Never" />
     <disable_collisions link1="r_arm_wr_p_link" link2="r_palm" reason="Adjacent" />
     <disable_collisions link1="r_arm_wr_r_link" link2="r_arm_wr_y_link" reason="Adjacent" />
     <disable_collisions link1="r_arm_wr_r_link" link2="r_f0_link_0" reason="Never" />
     <disable_collisions link1="r_arm_wr_r_link" link2="r_f1_link_0" reason="Never" />
+    <disable_collisions link1="r_arm_wr_r_link" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="r_arm_wr_r_link" link2="r_leg_an_r_link" reason="Never" />
+    <disable_collisions link1="r_arm_wr_r_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="r_arm_wr_r_link" link2="r_palm" reason="Never" />
     <disable_collisions link1="r_arm_wr_y_link" link2="r_f0_link_0" reason="Never" />
     <disable_collisions link1="r_arm_wr_y_link" link2="r_f1_link_0" reason="Never" />
+    <disable_collisions link1="r_arm_wr_y_link" link2="r_leg_an_p_link" reason="Never" />
+    <disable_collisions link1="r_arm_wr_y_link" link2="r_leg_kn_p_link" reason="Never" />
     <disable_collisions link1="r_arm_wr_y_link" link2="r_palm" reason="Never" />
     <disable_collisions link1="r_f0_link_0" link2="r_f1_link_0" reason="Never" />
     <disable_collisions link1="r_f0_link_0" link2="r_palm" reason="Adjacent" />

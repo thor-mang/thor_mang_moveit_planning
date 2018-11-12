@@ -7,11 +7,6 @@ joint_limits:
     max_velocity: 6.5
     has_acceleration_limits: false
     max_acceleration: 0
-  l_arm_ft:
-    has_velocity_limits: true
-    max_velocity: 6.5
-    has_acceleration_limits: false
-    max_acceleration: 0
   l_arm_sh_p1:
     has_velocity_limits: true
     max_velocity: 6.5
@@ -43,11 +38,6 @@ joint_limits:
     has_acceleration_limits: false
     max_acceleration: 0
   r_arm_el_y:
-    has_velocity_limits: true
-    max_velocity: 6.5
-    has_acceleration_limits: false
-    max_acceleration: 0
-  r_arm_ft:
     has_velocity_limits: true
     max_velocity: 6.5
     has_acceleration_limits: false

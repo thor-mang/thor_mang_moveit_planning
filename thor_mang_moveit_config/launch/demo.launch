@@ -1,5 +1,5 @@
 <launch>
-<arg name="ns" default="johnny5" />
+<arg name="ns" default="johnny5/moveit" />
 <group ns="$(arg ns)">
 
   <!-- By default, we do not start a database (it can be large) -->
